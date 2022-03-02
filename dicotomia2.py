@@ -11,22 +11,21 @@ def comparar():
                 t[k] = t[k - 1]
                 k = k - 1  #Hacemos que retroceda para no saltarnos ningún valor
                 t[k] = inicial 
-                print("tabla t")
-                print (t)    
                 
             r.append(inicial)
             r.sort() #nueva tabla ordenada
         else: #añadimos los elementos que van en orden creciente y los ordenamos
             r.append(t[k - 1])
-            print("tabla r")
-            print(r)
+            
     if len(t) == len(r): #comprobación de que ambas listas tienen los mismos elementos
         pass
     else:
         r.append(t[len(t) - 1])
-        print("tabla r")
-        print(r)
     t = c
 comparar()
 
+print("tabla t")
+print (t)    
+print("tabla r")
+print(r)    
     
