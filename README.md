@@ -7,8 +7,8 @@ He realizado una serie de ejercicios mediente distintos métodos de ordenación,
 
 Digrama del primer ejercicio parte uno:
 
-![diagrama ejercicio 4.1](Ejercicio 4-1.jpg)
+![diagrama UML del ejercicio 4](/Ejercicio 4-1.jpg)
 
 Diagrama del segundo ejercicio parte dos:
 
-![diagrama ejercicio 4.2](Ejercicio 4-2.jpg)
+![diagrama UML del ejercicio 4](/Ejercicio 4-2.jpg)
