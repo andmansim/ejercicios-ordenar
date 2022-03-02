@@ -1,7 +1,7 @@
 #Variables
 t = [2, 6, 7, 8, 3, 5, 1, 9, 0]
 r = []
-
+c = t
 def comparar():
     for i in range(1, len(t)): #Empezamos con el 1 para poderlo comparar con el posterior y con el siguiente
         inicial = t[i]
@@ -16,5 +16,17 @@ def comparar():
                 
             r.append(inicial)
             r.sort() #nueva tabla ordenada
+        else: #añadimos los elementos que van en orden creciente y los ordenamos
+            r.append(t[k - 1])
+            print("tabla r")
+            print(r)
+    if len(t) == len(r): #comprobación de que ambas listas tienen los mismos elementos
+        pass
+    else:
+        r.append(t[len(t) - 1])
+        print("tabla r")
+        print(r)
+    t = c
+comparar()
 
     
