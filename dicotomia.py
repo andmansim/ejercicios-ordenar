@@ -6,11 +6,11 @@ def comparar():
   
     for i in range(1, a): #Empezamos con el 1 para poderlo comparar con el posterior y con el siguiente
         inicial = t[i]
-                       
-        while  i > 0 and t[i - 1] > inicial:
-            t[i] = t[i - 1]
-            i = i - 1  #Hacemos que retroceda para no saltarnos ningún valor
-            t[i] = inicial 
+        k = i           
+        while  k > 0 and t[k - 1] > inicial:
+            t[k] = t[k - 1]
+            k = k - 1  #Hacemos que retroceda para no saltarnos ningún valor
+            t[k] = inicial 
             print (t)    
         print(t)
             
