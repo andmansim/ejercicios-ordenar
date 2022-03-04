@@ -13,7 +13,7 @@ for i in range(1,len(tareas)): #Recorre la primera parte del diccionario
     if i not in t_ejecutada: #Mira si la tarea está en ejecutada, si no está llama a la función ejecutarTarea para ver las subtareas y así ejecutarla
         ejecutarTarea(i)
                   
-
+t_ejecutada.reverse()
 print(t_ejecutada)   
     
 
