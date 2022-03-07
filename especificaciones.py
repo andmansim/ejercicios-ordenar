@@ -12,22 +12,26 @@ def segmentos (i):
     s_total = [] #lsita que contiene a todos los segmentos
     for k in range (i, fin + 1):
         if t[k] > t[i]: # solo pasa aquellos que son mayor que el primero
+            
             for j in range(i, k): # los añadimos a segmento
                 segmento.append(t[j])
+                
             s_total.append(segmento) # añadimos el segmento al total
+            segmentos(k)
             segmento = []
             e = k # nos guarda el último valor de k para luego empezar con él
             i = k
         
         if k == fin: #añade los sobrantes
             segmento = []
-            for g in range (e, fin):
+            
+            for g in range (e, fin + 1):
                 segmento.append(t[g])
                 print(t[g])
              
             print(segmento)
             s_total.append(segmento)
 
-segmento(inicio)
+segmentos(inicio)
             
     
