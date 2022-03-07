@@ -34,4 +34,19 @@ def segmentos (i):
 
 segmentos(inicio)
             
+#esta función nos servirá para otra que nos ordenará los elementos de cada segmento          
+#Función que coloca el elemento máximo de cada segmento al principio
+def explorar():
+    t2 = [14, 7, 30, 12, 6, 18] #lista de prueba
+    i = 0
+    fin = len(t2)
+    while i < fin - 1:
+        if t2[i] > t2[i + 1]: #compara elementos con el siguente y pone el máximo al final
+            t2[i], t2[i + 1] = t2[i + 1], t2[i]
+        i = i + 1
     
+    t2.insert(0, t2[len(t2) - 1]) #coloca el máximo al principio y mueve el resto una posición a la derecha
+    del(t2[len(t2) - 1])
+    print(t2)
+
+explorar()
