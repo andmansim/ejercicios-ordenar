@@ -6,7 +6,7 @@ segmento = [] #se irá guardando los distintos segmentos que encontremos
 segmento_final = [] #mostrará el resultado final
 
 # Función que divide en segmentos nuestra lista con el número máximo al principio
-def segmentos ():
+def segmentos (i):
     segmento = []
     e = 0
     s_total = [] #lsita que contiene a todos los segmentos
@@ -19,7 +19,15 @@ def segmentos ():
             e = k # nos guarda el último valor de k para luego empezar con él
             i = k
         
-        if k == fin:
+        if k == fin: #añade los sobrantes
             segmento = []
+            for g in range (e, fin):
+                segmento.append(t[g])
+                print(t[g])
+             
+            print(segmento)
+            s_total.append(segmento)
+
+segmento(inicio)
             
     
