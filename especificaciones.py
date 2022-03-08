@@ -73,5 +73,5 @@ def ordenar(segmento):
 
 a = segmentos(inicio)
 print(a)
-ordenar(a)
+print(ordenar(a))
         
