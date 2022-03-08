@@ -16,6 +16,3 @@ def comparar():
             print (t)    
         print(t)
             
-
-
-

@@ -50,3 +50,13 @@ def explorar():
     print(t2)
 
 explorar()
+
+#Función que nos va a ordenar los elementos del segmento
+
+def ordenar(segmento):
+    subsegmento = [] #se almacenan los subsegmentos
+    subsegmento2 = [] #subsegmento ordenado
+    for m in range(0, len(segmento)):
+        subsegmento = segmento[m] #se coge cada uno de los subsegementos
+        
+        
