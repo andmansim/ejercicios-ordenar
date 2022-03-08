@@ -1,7 +1,6 @@
 
-
 # Función que divide en segmentos nuestra lista con el número máximo al principio
-def segmentos (i, fin):
+def segmentos (i, fin, t):
     segmento = []
     e = 0
     s_total = [] #lista que contiene a todos los segmentos
@@ -32,7 +31,7 @@ def segmentos (i, fin):
          
 #Función que coloca el elemento máximo de cada segmento al principio
 def explorar(t):
-    #t2 = [14, 7, 30, 12, 6, 18] #lista de prueba
+    
     i = 0
     fin = len(t)
     while i < fin - 1:
@@ -62,6 +61,7 @@ def ordenar(segmento):
             subsegmento = explorar(subsegmento) #le llamamos para que nos ponga el valor más alto al principio
         t_max = subsegmento[0]
         subsegmento2.insert(0, t_max)
+        
         #ordenamos subsegmentos
         segmento_final.append(subsegmento2)
         subsegmento2 = []
