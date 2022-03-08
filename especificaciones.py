@@ -36,20 +36,20 @@ segmentos(inicio)
             
 #esta función nos servirá para otra que nos ordenará los elementos de cada segmento          
 #Función que coloca el elemento máximo de cada segmento al principio
-def explorar():
-    t2 = [14, 7, 30, 12, 6, 18] #lista de prueba
+def explorar(t):
+    #t2 = [14, 7, 30, 12, 6, 18] #lista de prueba
     i = 0
-    fin = len(t2)
+    fin = len(t)
     while i < fin - 1:
-        if t2[i] > t2[i + 1]: #compara elementos con el siguente y pone el máximo al final
-            t2[i], t2[i + 1] = t2[i + 1], t2[i]
+        if t[i] > t[i + 1]: #compara elementos con el siguente y pone el máximo al final
+            t[i], t[i + 1] = t[i + 1], t[i]
         i = i + 1
     
-    t2.insert(0, t2[len(t2) - 1]) #coloca el máximo al principio y mueve el resto una posición a la derecha
-    del(t2[len(t2) - 1])
-    print(t2)
+    t.insert(0, t[len(t2) - 1]) #coloca el máximo al principio y mueve el resto una posición a la derecha
+    del(t[len(t) - 1])
+    print(t)
 
-explorar()
+
 
 #Función que nos va a ordenar los elementos del segmento
 
@@ -58,5 +58,11 @@ def ordenar(segmento):
     subsegmento2 = [] #subsegmento ordenado
     for m in range(0, len(segmento)):
         subsegmento = segmento[m] #se coge cada uno de los subsegementos
-        
+        while len(subsegmento) > 1:
+            t_max = subsegmento[0] #el número máximo del segmento
+            subsegmento2.insert(0, t_max) #inserta al principio el máximo en la lista donde se van a quedar ya todos ordenados
+            del subsegmento[0]
+            subsegmento = explorar(subsegmento) #le llamamos para que nos ponga el valor más alto al principio
+        print(subsegmento)
+ordenar(segmento)
         
