@@ -3,7 +3,6 @@ t = [14, 7, 12, 6, 18, 13, 9, 10, 16, 21, 19, 8, 25, 3]
 inicio = 0
 fin = len(t) - 1
 segmento = [] #se irá guardando los distintos segmentos que encontremos 
-segmento_final = [] #mostrará el resultado final
 
 # Función que divide en segmentos nuestra lista con el número máximo al principio
 def segmentos (i):
@@ -30,11 +29,11 @@ def segmentos (i):
                 segmento.append(t[g])
                 
             s_total.append(segmento)
-    print(s_total)
+    return s_total
 
-segmentos(inicio)
+
             
-#esta función nos servirá para otra que nos ordenará los elementos de cada segmento          
+         
 #Función que coloca el elemento máximo de cada segmento al principio
 def explorar(t):
     #t2 = [14, 7, 30, 12, 6, 18] #lista de prueba
@@ -45,9 +44,9 @@ def explorar(t):
             t[i], t[i + 1] = t[i + 1], t[i]
         i = i + 1
     
-    t.insert(0, t[len(t2) - 1]) #coloca el máximo al principio y mueve el resto una posición a la derecha
+    t.insert(0, t[len(t) - 1]) #coloca el máximo al principio y mueve el resto una posición a la derecha
     del(t[len(t) - 1])
-    print(t)
+    return t
 
 
 
@@ -56,6 +55,8 @@ def explorar(t):
 def ordenar(segmento):
     subsegmento = [] #se almacenan los subsegmentos
     subsegmento2 = [] #subsegmento ordenado
+    segmento_final = [] #mostrará el resultado final
+
     for m in range(0, len(segmento)):
         subsegmento = segmento[m] #se coge cada uno de los subsegementos
         while len(subsegmento) > 1:
@@ -63,6 +64,14 @@ def ordenar(segmento):
             subsegmento2.insert(0, t_max) #inserta al principio el máximo en la lista donde se van a quedar ya todos ordenados
             del subsegmento[0]
             subsegmento = explorar(subsegmento) #le llamamos para que nos ponga el valor más alto al principio
-        print(subsegmento)
-ordenar(segmento)
+        t_max = subsegmento[0]
+        subsegmento2.insert(0, t_max)
+        #ordenamos subsegmentos
+        segmento_final.append(subsegmento2)
+        subsegmento2 = []
+    return segmento_final
+
+a = segmentos(inicio)
+print(a)
+ordenar(a)
         
