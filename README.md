@@ -17,7 +17,7 @@ Y su UML es:
 El segundo ejercicio, hemos hecho una ordenación topológica, donde unas tareas dependían de otras para que se ejecutasen.
 Su diagrama de flujo es el siguiente:
 
-![diagrama de flujo de topologica](/)
+![diagrama de flujo de topologica](/Topologica.jpg)
 
 Y su UML es:
 
@@ -26,7 +26,7 @@ Y su UML es:
 En el tercer ejercicio, hemos ordenado segmentos mediante una ordenación de especificaciones.
 Su diagrama de flujo es el siguiente:
 
-![diagrama de flujo de especificaciones](/)
+![diagrama de flujo de especificaciones](/Especificaciones.jpg)
 
 Y su UML es:
 
