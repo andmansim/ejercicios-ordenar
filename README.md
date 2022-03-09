@@ -7,7 +7,7 @@ He realizado una serie de ejercicios mediente distintos métodos de ordenación,
 El primer ejercicio consistía en una ordenación dicotómica. Se divide en dos partes:
 Su diagrama de flujo es el siguiente:
 
-![diagrama de flujo de dicotomia](/)
+![diagrama de flujo de dicotomia](/Dicotomia.jpg)
 
 Y su UML es:
 
