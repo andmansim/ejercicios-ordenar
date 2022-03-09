@@ -7,11 +7,11 @@ He realizado una serie de ejercicios mediente distintos métodos de ordenación,
 El primer ejercicio consistía en una ordenación dicotómica. Se divide en dos partes:
 Digrama del primer ejercicio parte uno:
 
-![diagrama UML del ejercicio 4](/Ejercicio4-1.jpg)
+![diagrama UML del ejercicio 1 primera parte](/)
 
 Diagrama del segundo ejercicio parte dos:
 
-![diagrama UML del ejercicio 4](/Ejercicio4-2.jpg)
+![diagrama UML del ejercicio 1 segunda parte](/)
 
 El segundo ejercicio, hemos hecho una ordenación topológica, donde unas tareas dependían de otras para que se ejecutasen.
 Su diagrama de flujo es el siguiente:
