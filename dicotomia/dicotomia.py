@@ -15,4 +15,36 @@ def comparar():
             t[k] = inicial 
             print (t)    
         print(t)
+         
+#Segunda parte del primer ejercicio
+#Variables
+t1 = comparar()
+
+r = [None] * len(t) #tabla auxiliar con el número de elementos que t
+
+
+#Función
+def ordenar():
+    for j in range(0, len(t) - 1):
+        
+        b = int(len(t1) / 2)
+        print(b)
+        c = True
+        while c == True:
+            
+            if t[j] > t1[b]:
+                q = len(t1[b + 1], len(t1))
+                pass
+            elif t[j] > t1[b]:
+                t2 = []
+                for w in range(0, b):
+                    t2.append(t1[w])
+                    b = int(len(t2) / 2)
+                    print(t2)
+                    print(b)
+                    c = True
+            else: 
+                r.insert(0, t[j])
+                print(r)
+                c = False
             

@@ -3,9 +3,11 @@
 t = [2, 6, 7, 8, 3, 5, 1, 9, 0]
 r = [None] * len(t) #tabla auxiliar con el número de elementos que t
 
+
 #Función
 def ordenaaux():
-    for i in range (0, len(t)):
+    
+    for i in range (0, len(t) - 1):
         m = 0
         for k in range(0, len(t)):
         
