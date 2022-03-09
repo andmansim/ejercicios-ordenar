@@ -20,7 +20,7 @@ Su diagrama de flujo es el siguiente:
 
 Y su UML es:
 
-![diagrama uml de topologica](/UMLtopologica.jpg)
+![diagrama uml de topologica](/topologica/UMLtopologica.jpg)
 
 En el tercer ejercicio, hemos ordenado segmentos mediante una ordenación de especificaciones.
 Su diagrama de flujo es el siguiente:
