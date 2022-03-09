@@ -29,5 +29,5 @@ Su diagrama de flujo es el siguiente:
 
 Y su UML es:
 
-![diagrama uml de especificaciones](/UMLespecificaciones.jpg)
+![diagrama uml de especificaciones](/especificaciones/UMLespecificaciones.jpg)
 
