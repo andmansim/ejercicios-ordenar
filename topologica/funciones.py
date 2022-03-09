@@ -6,14 +6,3 @@ def ejecutarTarea(r, t, t_e): #Esta función recorre la segunda parte del diccio
             ejecutarTarea(j, t, t_e)
     t_e.insert(0, r) #Como si está ejecutada, la añade a la lista de t_ejecuta
             
-    
-
-
-            
-
-     
-    
-
-
-            
-    
