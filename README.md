@@ -5,13 +5,14 @@ https://github.com/andmansim/ejercicios-ordenar.git
 
 He realizado una serie de ejercicios mediente distintos métodos de ordenación, al igual que un diagrama de flujo y un UML.
 El primer ejercicio consistía en una ordenación dicotómica. Se divide en dos partes:
-Digrama del primer ejercicio parte uno:
+Su diagrama de flujo es el siguiente:
 
-![diagrama UML del ejercicio 1 primera parte](/)
+![diagrama de flujo de dicotomia](/)
 
-Diagrama del segundo ejercicio parte dos:
+Y su UML es:
 
-![diagrama UML del ejercicio 1 segunda parte](/)
+![diagrama UML de dicotomia](/dicotomia/UMLdicotomia.jpg)
+
 
 El segundo ejercicio, hemos hecho una ordenación topológica, donde unas tareas dependían de otras para que se ejecutasen.
 Su diagrama de flujo es el siguiente:
