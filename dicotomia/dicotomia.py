@@ -36,8 +36,8 @@ def ordenar(t):
         fin = len(t1)
         m = int((fin - inicial)/ 2) # dividimos a la mitad la lista tabla ya ordenada
         
-        while c == True:
-            if t[j] > t1[m + inicial]: #
+        while c == True: #nos acotan el rango para poder comparar con el del medio
+            if t[j] > t1[m + inicial]: 
                 inicial = inicial + m    
                 m =  int((fin - inicial)/ 2)
                  
@@ -47,7 +47,7 @@ def ordenar(t):
               
             else:
                 
-                r[m + inicial] = t[j]
+                r[m + inicial] = t[j] #añade el elemento a la lista r en su posición correcta
                 print(r)
                 c = False
             
