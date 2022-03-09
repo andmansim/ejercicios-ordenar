@@ -30,7 +30,7 @@ r = [None] * len(tabla) #tabla auxiliar con el número de elementos que t
 #Función
 def ordenar(t):
         
-    for j in range(0, len(t) - 1): #recorremos la lista tabla para poder ordenarla
+    for j in range(2, 3): #recorremos la lista tabla para poder ordenarla
  
         c = True  
         inicial = 0
@@ -42,15 +42,16 @@ def ordenar(t):
                 inicial = inicial + m    
                 m =  int((fin - inicial)/ 2)
                 print(inicial,fin,m,t[j],t1[m + inicial] )
-                
-               
-                
+                            
+                if m == 0:
+                    c = False
             
-            elif t[j] < t1[m + inicial]: 
+            elif t[j] < t1[fin - m]: 
                 fin = fin - m - 1 
                 m = int((fin - inicial)/ 2)
-                print(inicial,fin,m,t[j],t1[m + inicial] )
-               
+                print(inicial,fin,m,t[j],t1[fin - m] )
+                if m == 0:
+                    c = False
             
             else:
                 v = t1.index(t1[m + inicial]) 
