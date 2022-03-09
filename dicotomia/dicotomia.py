@@ -24,38 +24,30 @@ def comparar(t2):
 t1 = comparar(tabla)
 print("tabla")
 print(t1) #tabla ordenada
-r = [None] * len(tabla) #tabla auxiliar con el número de elementos que t
+r = [None] * len(tabla)  #tabla auxiliar con el número de elementos que t
 
 
-#Función
+#Función ordenar con búsqueda dicotomía
 def ordenar(t):
         
-    for j in range(2, 3): #recorremos la lista tabla para poder ordenarla
- 
+    for j in range(0, len(t)): #recorremos la lista tabla para poder ordenarla
         c = True  
         inicial = 0
         fin = len(t1)
         m = int((fin - inicial)/ 2) # dividimos a la mitad la lista tabla ya ordenada
-        print(inicial,fin,m,t[j],t1[m + inicial] )
+        
         while c == True:
-            if t[j] > t1[m + inicial]:
+            if t[j] > t1[m + inicial]: #
                 inicial = inicial + m    
                 m =  int((fin - inicial)/ 2)
-                print(inicial,fin,m,t[j],t1[m + inicial] )
-                            
-                if m == 0:
-                    c = False
-            
-            elif t[j] < t1[fin - m]: 
-                fin = fin - m - 1 
+                 
+            elif t[j] < t1[m + inicial]: 
+                fin = fin - m 
                 m = int((fin - inicial)/ 2)
-                print(inicial,fin,m,t[j],t1[fin - m] )
-                if m == 0:
-                    c = False
-            
+              
             else:
-                v = t1.index(t1[m + inicial]) 
-                r.insert(v, t[j])
+                
+                r[m + inicial] = t[j]
                 print(r)
                 c = False
             
